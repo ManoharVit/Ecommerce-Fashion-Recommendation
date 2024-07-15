@@ -5,6 +5,12 @@ Based on past interactions with customer and product metadata, including product
 
 Kaggle H&M Personalized Fashion Recommendations competition, where the challenge was to build a recommendation engine to predict which articles a customer would buy in a particular week starting on September 23, 2020.
 
+### Key highlights of our work:
+* Analyzed over 34GB of publicly available H&M datasets from Kaggle, which included images, articles, customer data, and time-series transaction data.
+* Cleaned and merged unstructured and messy datasets to create a cohesive dataset.
+* Integrated customer and transaction data to identify purchase patterns, and used classification techniques to categorize them into their respective article clusters.
+* Developed a personalized fashion recommendation model that achieved an accuracy of 79%.
+
 As Yuval Noah Harari points out in "Homo Deus," the same mathematical laws apply to both biochemical and electronic algorithms. This project aims to represent human decision-making processes as algorithms that process multidimensional input information and generate outputs in the form of decisions.
 
 ## Recommendations Everywhere
@@ -34,6 +40,38 @@ Detailed descriptions of articles provide additional information about products,
 
 ### Article Images
 Images of articles were included in the dataset, offering another dimension for feature generation.
+
+## Recommendation Engines
+
+When thinking about recommendations, content-based and collaborative filtering models are the two most popular ML algorithms in this field.
+
+### Content-Based Filtering
+Content-based filtering uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback. For example, if a customer likes a leopard-print pattern, the model will recommend other products with the same pattern.
+
+### Collaborative Filtering
+Collaborative filtering uses similarities between users and items simultaneously to provide recommendations. This allows for serendipitous recommendations, where an item is recommended to user A based on the interests of a similar user B. The embeddings are learned automatically, without relying on hand-engineering of features.
+
+## Tools and Frameworks
+
+### Python Libraries
+
+- **CUDF**: GPU DataFrame library for fast, parallel processing.
+- **Pandas**: Data manipulation and analysis.
+- **NumPy**: Numerical computing.
+- **Scipy**: Scientific computing and technical computing.
+- **Scikit-Learn**: Machine learning algorithms and tools.
+- **TensorFlow / Keras**: Deep learning frameworks.
+- **PyTorch**: Another popular deep learning framework.
+- **Matplotlib / Seaborn**: Data visualization.
+- **Plotly**: Interactive graphing library.
+- **NLTK / SpaCy**: Natural language processing.
+- **LightGBM / XGBoost**: Gradient boosting frameworks for efficient modeling.
+- **TQDM**: Progress bar for loops.
+- **Pillow (PIL)**: Image processing.
+- **WordCloud**: Generate word clouds.
+- **OpenCV**: Image processing.
+- **WandB**: Experiment tracking and visualization.
+- **Bokeh**: Interactive visualizations.
 
 ## Conceptualization
 
